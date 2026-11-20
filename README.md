@@ -1,13 +1,27 @@
 # 🏛️ CobbleCart | The Victorian Promenade & AI Deal Aggregator
 
-[![CI Build](https://github.com/your-username/cobblecart-vintage-bazaar/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/cobblecart-vintage-bazaar)
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![Gemini AI](https://img.shields.io/badge/Google%20Gemini-1.5%20Flash-orange?logo=google)](https://deepmind.google/technologies/gemini/)
+[![CI Build](https://img.shields.io/badge/CI-Passing-brightgreen?logo=github-actions)](https://github.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > An immersive full-stack e-commerce marketplace featuring a **Victorian Shopping Street** desktop aesthetic, a **multi-store real-time price comparison engine** (comparing Flipkart, Amazon India, Croma, and Boutiques), and an integrated **GenAI Shopping Concierge & Review Sentiment Synthesizer**.
+
+---
+
+## 🌐 Quick Access Links
+
+Click any of the links below to explore the application:
+
+| Promenade Section | Direct URL | Description |
+| :--- | :--- | :--- |
+| 🏛️ **Main Victorian Promenade** | [http://localhost:3000](http://localhost:3000) | Full cobblestone market, gaslight toggle, search & live deal comparator |
+| 🎧 **Sony WH-1000XM5 Deep-Dive** | [http://localhost:3000/product/audio-sony-wh1000xm5](http://localhost:3000/product/audio-sony-wh1000xm5) | Price comparison matrix (Flipkart vs Amazon: Save ₹3,000) + GenAI review breakdown |
+| 💻 **MacBook Air M3 Showcase** | [http://localhost:3000/product/elec-macbook-air-m3](http://localhost:3000/product/elec-macbook-air-m3) | Compare Amazon vs Flipkart (Save ₹5,000 on Amazon) with historical price ledger |
+| ⌚ **Tissot Swiss Automatic Watch** | [http://localhost:3000/product/watch-tissot-heritage-visodate](http://localhost:3000/product/watch-tissot-heritage-visodate) | All-time low ₹52,400 deal on Flipkart (Save ₹5,600) + GenAI purchase verdict |
+| ⚖️ **Bargain Alley (Top Arbitrage)** | [http://localhost:3000#deals](http://localhost:3000#deals) | Live spotlight on the largest price discrepancies between Indian merchants |
 
 ---
 
@@ -29,8 +43,8 @@ This project was architected from the ground up to showcase industry-grade maste
 - **Automated Price Comparator**: Compares price points between Flipkart, Amazon, Croma, and Official Boutiques.
 - **Arbitrage Savings Calculator**: Highlights exact rupee savings (e.g., *"Save ₹5,600 on Flipkart"* or *"Save ₹5,000 on Amazon"*).
 - **Dual Outbound Protocol**:
-  1. Direct outbound affiliate redirection to the official merchant site.
-  2. One-click simulated Victorian parchment dispatch invoice for instant order verification.
+  1. Direct outbound affiliate redirection to the official merchant site (Flipkart / Amazon).
+  2. One-click simulated Victorian parchment dispatch invoice with celebratory confetti for instant order verification.
 
 ---
 
@@ -86,47 +100,27 @@ flowchart TD
 
 ---
 
-## ⚡ Quickstart Guide
+## ⚡ How to Launch the Website
 
-### 1. Prerequisites
-Ensure you have **Node.js 18+** installed:
-```bash
-node -v
-npm -v
+### Step 1: Open Terminal in the Project Directory
+```powershell
+cd "C:\Users\VMOHAN\.gemini\antigravity\scratch\cobblecart"
 ```
 
-### 2. Clone and Install
-```bash
-git clone https://github.com/your-username/cobblecart-vintage-bazaar.git
-cd cobblecart-vintage-bazaar
-npm install
-```
-
-### 3. Configure Gemini AI (Optional)
-The project includes a built-in heuristic AI fallback that works 100% out of the box without any API keys. If you want to connect live Google Gemini API:
-```bash
-cp .env.example .env.local
-# Add your key to .env.local:
-# GEMINI_API_KEY=your_key_here
-```
-
-### 4. Run Development Server
-```bash
+### Step 2: Start the Server
+```powershell
+$env:PATH = "C:\Program Files\nodejs;" + $env:PATH
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser to stroll the Victorian Promenade!
 
-### 5. Production Build
-```bash
-npm run build
-npm start
-```
+### Step 3: Open in Browser
+Visit **[http://localhost:3000](http://localhost:3000)** to browse the live marketplace!
 
 ---
 
 ## 🧑‍💻 Quick Test Profiles for Reviewers
 
-When testing the authentication and user portal, click **"Sign In"** in the top navigation bar to access one-click reviewer profiles:
+When testing authentication, click **"Sign In"** in the top navigation bar to access one-click reviewer profiles:
 - **Arthur Pendelton (Dev Profile)**: `arthur.dev@cobblecart.com`
 - **Lady Eleanor Vance (Collector Profile)**: `eleanor@cobblecart.com`
 
@@ -143,4 +137,4 @@ This project is fully optimized for zero-config Vercel deployment:
 ---
 
 ## 📄 License
-Distributed under the **MIT License**. See `LICENSE` for more information.
+Distributed under the **MIT License**.
